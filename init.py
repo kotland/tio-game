@@ -31,6 +31,15 @@ def print_field():
     for row in field:
         print(row)
 
+def computers():
+    while(True):
+        row = random.randint(0, 2)
+        pos = random.randint(0, 2)
+        if (field[row][pos] == " "):
+            field[row][pos] = "O"
+            break
+        else:
+            continue
 
 
 
@@ -39,4 +48,5 @@ def print_field():
 while(True):
 
     inputs()
+    computers()
     print_field()
