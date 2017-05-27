@@ -52,6 +52,14 @@ def check_win():
             print(field[row][0].__str__() + " win!")
             exit()
 
+    if (field[0][0] == field[1][1] == field[2][2] != " "):
+        print(field[row][0].__str__() + " win!")
+        exit()
+
+    if (field[0][2] == field[1][1] == field[2][0] != " "):
+        print(field[row][0].__str__() + " win!")
+        exit()
+
 
 
 while(True):
